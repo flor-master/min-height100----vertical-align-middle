@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="height=100%">
+
+    <style>
+
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            min-height: 100%;
+        }
+        body{
+            background: gray;
+        }
+        .site_wr{
+            height: 100%;
+            display: table;
+            width: 100%;
+            background: darkgoldenrod;
+            position: relative;
+        }
+        .mask{
+            position: absolute;
+            top: 0;
+            right: 120px;
+            left: 0;
+            bottom: 0;
+            background: red;
+            opacity: 0.2;
+            z-index: 1;
+        }
+        .content{
+            z-index: 100;
+
+            display: table-row;
+            height: 100%;
+
+            position: relative;
+        }
+        .text{
+            display: table-cell;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<div class="site_wr">
+
+    <div class="mask"></div>
+
+    <div class="content">
+        <div class="text">
+            content
+        </div>
+    </div>
+</div>
+</body>
+</html>
